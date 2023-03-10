@@ -1,0 +1,23 @@
+body {
+    font-family: 'Tilt Warp', cursive;
+}
+.center-block {
+    margin: 0 auto;
+    width: 65%;
+
+}
+.inner-center-block {
+    border-bottom: solid;
+    border-color: blue;
+    /* border-color: brown; */
+}
+.center-block .inner-center-block:last-child {
+    border-bottom: none;
+}
+p {
+    font-size: calc(0.5rem + 2vw);
+    padding-left: 5%;
+}
+.main-title {
+    font-size: calc(1rem + 2vw);
+}
