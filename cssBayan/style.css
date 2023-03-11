@@ -137,3 +137,39 @@ p {
     height: 20rem;
   }
 }
+
+@media (hover: hover) {
+    .center-block:hover .inner-center-block {
+      color:blue;
+    }
+  
+  
+    .center-block:hover i {
+      opacity: 1;
+    }
+  
+    .inner-center-block:hover i {
+      transform: rotate(-90deg);
+      color: #000000;
+    }
+  
+  }
+@media (hover: none) {
+    .accordion:hover .accordion-item {
+      /* background-color: #fff; */
+    }
+  
+    .center-block i {
+      opacity: 1;
+    }
+  
+    .inner-center-block:hover i {
+      transform: rotate(-90deg);
+      color: #000000;
+    }
+  
+    .inner-center-block:hover .item-content {
+      /* background-color: rgb(237, 246, 253); */
+      border-radius: 1.563rem;
+    }
+  }
