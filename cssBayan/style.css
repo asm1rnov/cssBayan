@@ -78,10 +78,6 @@ input[id^=item1]:checked~.item-content,
     padding: 1.5rem 0.5rem;
   }
   
-input[id^=item]:checked~.item-title {
-    /* background-color: rgb(238, 199, 92); */
-    /* border-radius: 1.563rem; */
-  }
   
 input[id^=item]:checked~.item-title i {
     transform: rotate(-90deg);
@@ -155,10 +151,7 @@ p {
   
   }
 @media (hover: none) {
-    .accordion:hover .accordion-item {
-      /* background-color: #fff; */
-    }
-  
+
     .center-block i {
       opacity: 1;
     }
@@ -168,8 +161,4 @@ p {
       color: blue;
     }
   
-    .inner-center-block:hover .item-content {
-      /* background-color: rgb(237, 246, 253); */
-      border-radius: 1.563rem;
-    }
   }
