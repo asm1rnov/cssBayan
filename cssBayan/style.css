@@ -5,16 +5,87 @@ body {
 .center-block {
     margin: 0 auto;
     width: 65%;
-
+    cursor: pointer;
 }
 .inner-center-block {
     border-bottom: solid;
     border-color: lightslategray;
-    /* border-color: brown; */
+
 }
-.inner-center-block:hover {
-    color: mediumblue;
+.inner-center-block input {
+    -webkit-appearance: none;
+    appearance: none;
+    display: none;
 }
+.inner-center-block .item-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1.063rem;
+    font-size: 1.375rem;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .inner-center-block .item-title .item-title-span1 {
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    border-radius: 2.75rem;
+    color: blue;
+  }
+  
+  .inner-center-block .item-title .item-title-span2 {
+    flex: 1;
+    margin-left: 0.625rem;
+  }
+  .inner-center-block i {
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+  }
+  .item-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transition: all 0.9s ease-in-out;
+    -moz-transition: all 0.9s ease-in-out;
+    -o-transition: all 0.9s ease-in-out;
+    -ms-transition: all 0.9s ease-in-out;
+    transition: all 0.9s ease-in-out;
+  }
+  
+  .item-content:active {
+    cursor: pointer;
+    background-color: aliceblue;
+  }
+  
+  .item-content:active img {
+    filter: brightness(30%);
+    border-radius: 0.938rem;
+  }
+  
+  .item-content img {
+    max-width: 100%;
+    max-height: 100%;
+    transition: 0.9s ease-in-out;
+  }
+input[id^=item1]:checked~.item-content,
+  .inner-center-block:hover .item-content {
+    height: 15rem;
+    padding: 1.5rem 0.5rem;
+  }
+  
+input[id^=item]:checked~.item-title {
+    /* background-color: rgb(238, 199, 92); */
+    /* border-radius: 1.563rem; */
+  }
+  
+input[id^=item]:checked~.item-title i {
+    transform: rotate(-90deg);
+  }
+
 .center-block .inner-center-block:last-child {
     border-bottom: none;
 }
@@ -24,21 +95,6 @@ p {
 .main-title {
     font-size: calc(1rem + 2vw);
 }
-.inner-img {
-    text-align: center;
-    margin-bottom: 5%;
-}
-
-.card {
-    display:inline-table;
-    border-style: solid;
-    border-color: black;
-    margin: 0 auto;
-    width: 100%;
-}
-.card-block1 {
-    display: table-row;
-}
-.card-block2 {
-    display: table-row;
+.item-content {
+    cursor:pointer;
 }
