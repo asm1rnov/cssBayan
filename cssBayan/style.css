@@ -11,7 +11,6 @@ body {
 .inner-center-block {
     border-bottom: solid;
     border-color: lightslategray;
-
 }
 .inner-center-block input {
     -webkit-appearance: none;
@@ -27,23 +26,15 @@ body {
     cursor: pointer;
     transition: 0.5s ease-in-out;
   }
-  
-  .inner-center-block .item-title .item-title-span1 {
-    display: inline-block;
-    padding: 0.2rem 1rem;
-    border-radius: 2.75rem;
-    color: blue;
-  }
-  
-  .inner-center-block .item-title .item-title-span2 {
+.inner-center-block .item-title .item-title-span2 {
     flex: 1;
     margin-left: 0.6rem;
   }
-  .inner-center-block i {
+.inner-center-block i {
     opacity: 0;
     transition: 0.5s ease-in-out;
   }
-  .item-content {
+.item-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,33 +47,27 @@ body {
     -ms-transition: all 0.9s ease-in-out;
     transition: all 0.9s ease-in-out;
   }
-  
-  .item-content:active {
+.item-content:active {
     cursor: pointer;
     background-color: aliceblue;
   }
-  
-  .item-content:active img {
+.item-content:active img {
     filter: brightness(35%);
     border-radius: 0.9rem;
   }
-  
-  .item-content img {
+.item-content img {
     max-width: 100%;
     max-height: 100%;
     transition: 0.9s ease-in-out;
   }
-input[id^=item1]:checked~.item-content,
+input[id^=item-]:checked~.item-content,
   .inner-center-block:hover .item-content {
     height: 15rem;
     padding: 1.5rem 0.5rem;
-  }
-  
-  
-input[id^=item]:checked~.item-title i {
+  } 
+input[id^=item-]:checked~.item-title i {
     transform: rotate(45deg);
   }
-
 .center-block .inner-center-block:last-child {
     border-bottom: none;
 }
@@ -96,69 +81,55 @@ p {
     cursor:pointer;
 }
 @media screen and (min-width: 1180px) {
-
-    input[id^=item]:checked~.item-content,
+    input[id^=item-]:checked~.item-content,
     .inner-center-block:hover .item-content {
       height: 30rem;
       padding: 1.5rem 0.5rem;
     }
-  
     .item-title-span2 {
       font-size: 2rem;
     }
-  
   }
-  
 @media screen and (max-width: 820px) {
     .main-title {
       font-size: 1.8rem;
     }
-  
     .item-title-span2 {
       font-size: 1.4rem;
     }
   }
-  
-  
 @media screen and (max-width: 320px) {
     .main-title {
       font-size: 1rem;
-    }
-  
+    } 
     .item-title-span2 {
       font-size: 0.8rem;
     }
-    input[id^=item]:checked~.item-content,
+    input[id^=item-]:checked~.item-content,
   .inner-center-block:hover .item-content {
     height: 20rem;
   }
 }
-
 @media (hover: hover) {
+
     .center-block:hover .inner-center-block {
       color:blue;
     }
-  
-  
     .center-block:hover i {
       opacity: 1;
     }
-  
     .inner-center-block:hover i {
       transform: rotate(45deg);
       color: blue;
     }
-  
   }
 @media (hover: none) {
 
     .center-block i {
       opacity: 1;
-    }
-  
+    } 
     .inner-center-block:hover i {
       transform: rotate(45deg);
       color: blue;
     }
-  
   }
