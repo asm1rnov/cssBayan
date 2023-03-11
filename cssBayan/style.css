@@ -149,8 +149,8 @@ p {
     }
   
     .inner-center-block:hover i {
-      transform: rotate(-90deg);
-      color: #000000;
+      transform: rotate(45deg);
+      color: blue;
     }
   
   }
@@ -164,8 +164,8 @@ p {
     }
   
     .inner-center-block:hover i {
-      transform: rotate(-90deg);
-      color: #000000;
+      transform: rotate(45deg);
+      color: blue;
     }
   
     .inner-center-block:hover .item-content {
