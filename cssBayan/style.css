@@ -37,7 +37,7 @@ body {
   
   .inner-center-block .item-title .item-title-span2 {
     flex: 1;
-    margin-left: 0.625rem;
+    margin-left: 0.6rem;
   }
   .inner-center-block i {
     opacity: 0;
@@ -63,8 +63,8 @@ body {
   }
   
   .item-content:active img {
-    filter: brightness(30%);
-    border-radius: 0.938rem;
+    filter: brightness(35%);
+    border-radius: 0.9rem;
   }
   
   .item-content img {
@@ -80,7 +80,7 @@ input[id^=item1]:checked~.item-content,
   
   
 input[id^=item]:checked~.item-title i {
-    transform: rotate(-90deg);
+    transform: rotate(45deg);
   }
 
 .center-block .inner-center-block:last-child {
