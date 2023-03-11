@@ -6,6 +6,7 @@ body {
     margin: 0 auto;
     width: 65%;
     cursor: pointer;
+    max-width: 50rem;
 }
 .inner-center-block {
     border-bottom: solid;
@@ -97,4 +98,42 @@ p {
 }
 .item-content {
     cursor:pointer;
+}
+@media screen and (min-width: 1180px) {
+
+    input[id^=item]:checked~.item-content,
+    .inner-center-block:hover .item-content {
+      height: 30rem;
+      padding: 1.5rem 0.5rem;
+    }
+  
+    .item-title-span2 {
+      font-size: 2rem;
+    }
+  
+  }
+  
+@media screen and (max-width: 820px) {
+    .main-title {
+      font-size: 1.8rem;
+    }
+  
+    .item-title-span2 {
+      font-size: 1.4rem;
+    }
+  }
+  
+  
+@media screen and (max-width: 320px) {
+    .main-title {
+      font-size: 1rem;
+    }
+  
+    .item-title-span2 {
+      font-size: 0.8rem;
+    }
+    input[id^=item]:checked~.item-content,
+  .inner-center-block:hover .item-content {
+    height: 20rem;
+  }
 }
