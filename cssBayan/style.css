@@ -1,5 +1,6 @@
 body {
     font-family: 'Tilt Warp', cursive;
+    background-color: lightgoldenrodyellow;
 }
 .center-block {
     margin: 0 auto;
@@ -8,16 +9,36 @@ body {
 }
 .inner-center-block {
     border-bottom: solid;
-    border-color: blue;
+    border-color: lightslategray;
     /* border-color: brown; */
+}
+.inner-center-block:hover {
+    color: mediumblue;
 }
 .center-block .inner-center-block:last-child {
     border-bottom: none;
 }
 p {
     font-size: calc(0.5rem + 2vw);
-    padding-left: 5%;
 }
 .main-title {
     font-size: calc(1rem + 2vw);
+}
+.inner-img {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.card {
+    display:inline-table;
+    border-style: solid;
+    border-color: black;
+    margin: 0 auto;
+    width: 100%;
+}
+.card-block1 {
+    display: table-row;
+}
+.card-block2 {
+    display: table-row;
 }
